@@ -71,6 +71,6 @@ function bandageClicked(){
 function getRandomPic(){
 	let x = Math.floor(Math.random() * 4);
 	let y = Math.floor(Math.random() * 10);
-	document.getElementById("changingImage").src = allPics[x][y];
+	document.getElementById("changingImage").src = "assets/" + allPics[x][y];
   return x;
 };
