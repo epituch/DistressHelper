@@ -17,7 +17,7 @@ function grillClicked(){
   }
 
   if(scoreCounter === 40) {
-    
+    window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
   
@@ -34,7 +34,7 @@ function coughClicked(){
   }
 
   if(scoreCounter === 40) {
-    
+    window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
   
@@ -51,7 +51,7 @@ function castClicked(){
   }
 
   if(scoreCounter === 40) {
-    
+    window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
 
@@ -68,7 +68,7 @@ function bandageClicked(){
   }
 
   if(scoreCounter === 40) {
-    
+    window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
 
