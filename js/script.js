@@ -11,12 +11,11 @@ function grillClicked(){
   if(currentCategory === 0) {
     scoreCounter++;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
-  } else {
-    scoreCounter = 0;
-    document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
+  } else if(currentCategory > -1) {
+    window.location = "https://restaurantjobs.mcdonalds.com/";
   }
 
-  if(scoreCounter === 40) {
+  if(scoreCounter === 20) {
     window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
@@ -28,12 +27,12 @@ function coughClicked(){
   if(currentCategory === 1) {
     scoreCounter++;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
-  } else {
-    scoreCounter = 0;
-    document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
+  } else if(currentCategory > -1) {
+    window.location = "https://restaurantjobs.mcdonalds.com/";
   }
 
-  if(scoreCounter === 40) {
+
+  if(scoreCounter === 20) {
     window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
@@ -45,12 +44,12 @@ function castClicked(){
   if(currentCategory === 2) {
     scoreCounter++;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
-  } else {
-    scoreCounter = 0;
-    document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
+  } else if(currentCategory > -1) {
+    window.location = "https://restaurantjobs.mcdonalds.com/";
   }
 
-  if(scoreCounter === 40) {
+
+  if(scoreCounter === 20) {
     window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
@@ -62,12 +61,12 @@ function bandageClicked(){
   if(currentCategory === 3) {
     scoreCounter++;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
-  } else {
-    scoreCounter = 0;
-    document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
+  } else if(currentCategory > -1) {
+    window.location = "https://restaurantjobs.mcdonalds.com/";
   }
 
-  if(scoreCounter === 40) {
+
+  if(scoreCounter === 20) {
     window.location = "https://meded.hms.harvard.edu/admissions-submitting-application";
   }
 
