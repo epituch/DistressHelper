@@ -3,7 +3,9 @@ let grillPics = [];
 let coughPics = [];
 let casePics = [];
 let bandagePics = [];
+let allPics = [grillPics, coughPics, casePics, bandagePics];
 function grillClicked(){
+	getRandomPic();
 	console.log("Clicked");
 };
 function coughClicked(){
@@ -16,5 +18,7 @@ function bandageClicked(){
 	console.log("Clicked");	
 };
 function getRandomPic(){
+	let x = Math.floor(Math.random() * 4);
+	let y = Math.floor(Math.random() * 10);
 	document.getElementById("changingImage").src = "";
 };
