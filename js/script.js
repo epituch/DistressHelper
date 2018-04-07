@@ -15,3 +15,6 @@ function castClicked(){
 function bandageClicked(){
 	console.log("Clicked");	
 };
+function getRandomPic(){
+	document.getElementById("changingImage").src = "";
+};
