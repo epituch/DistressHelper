@@ -21,7 +21,7 @@ function grillClicked(){
   }
 
   
-  let currentCategory = getRandomPic();
+  currentCategory = getRandomPic();
 	console.log("Clicked grill");
 };
 function coughClicked(){
@@ -38,7 +38,7 @@ function coughClicked(){
   }
 
   
-  let currentCategory = getRandomPic();
+  currentCategory = getRandomPic();
 	console.log("Clicked grill");		
 };
 function castClicked(){
@@ -55,7 +55,7 @@ function castClicked(){
   }
 
 
-  let currentCategory = getRandomPic();
+  currentCategory = getRandomPic();
 	console.log("Clicked cast");	
 };
 function bandageClicked(){
@@ -72,7 +72,7 @@ function bandageClicked(){
   }
 
 
-  let currentCategory =  getRandomPic();
+  currentCategory =  getRandomPic();
 	console.log("Clicked bandage");	
 };
 function getRandomPic(){
