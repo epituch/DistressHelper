@@ -1,3 +1,8 @@
+console.log("JS Loaded");
+let grillPics = [];
+let coughPics = [];
+let casePics = [];
+let bandagePics = [];
 function grillClicked(){
 	console.log("Clicked");
 };
