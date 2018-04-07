@@ -5,10 +5,10 @@ let castPics = ["cast0.jpg","cast1.jpg","cast2.jpg","cast3.jpg","cast4.jpg","cas
 let bandagePics = ["bandage0.jpg","bandage1.jpg","bandage2.jpg","bandage3.jpg","bandage4.jpg","bandage5.jpg","bandage6.jpg","bandage7.jpg","bandage8.jpg","bandage9.jpg"];
 var allPics = [grillPics, coughPics, castPics, bandagePics];
 var scoreCounter = 0;
+var currentCategory = -1;
 
 function grillClicked(){
-  let category = getRandomPic();
-  if(category == 0) {
+  if(currentCategory === 0) {
     scoreCounter++;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   } else {
@@ -16,56 +16,63 @@ function grillClicked(){
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   }
 
-  if(scoreCounter == 40) {
+  if(scoreCounter === 40) {
     
   }
+
+  
+  let currentCategory = getRandomPic();
 	console.log("Clicked grill");
 };
 function coughClicked(){
-  let category = getRandomPic();
-  if(category == 1) {
+  if(currentCategory === 1) {
     scoreCounter++;
-    document.getElementByID("score").innerHTML = "Your Doctor Score: " + scoreCounter;
+    document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   } else {
     scoreCounter = 0;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   }
 
-  if(scoreCounter == 40) {
+  if(scoreCounter === 40) {
     
   }
+
+  
+  let currentCategory = getRandomPic();
 	console.log("Clicked grill");		
 };
 function castClicked(){
-  let category = getRandomPic();
-  if(category == 2) {
+  if(currentCategory === 2) {
     scoreCounter++;
-    document.getElementByID("score").innerHTML = "Your Doctor Score: " + scoreCounter;
+    document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   } else {
     scoreCounter = 0;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   }
 
-  if(scoreCounter == 40) {
+  if(scoreCounter === 40) {
     
   }
 
+
+  let currentCategory = getRandomPic();
 	console.log("Clicked cast");	
 };
 function bandageClicked(){
-  let category = getRandomPic();
-  if(category == 3) {
+  if(currentCategory === 3) {
     scoreCounter++;
-    document.getElementByID("score").innerHTML = "Your Doctor Score: " + scoreCounter;
+    document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   } else {
     scoreCounter = 0;
     document.getElementById("score").innerHTML = "Your Doctor Score: " + scoreCounter;
   }
 
-  if(scoreCounter == 40) {
+  if(scoreCounter === 40) {
     
   }
 
+
+  let currentCategory =  getRandomPic();
 	console.log("Clicked bandage");	
 };
 function getRandomPic(){
